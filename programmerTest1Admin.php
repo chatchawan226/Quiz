@@ -23,7 +23,7 @@ if ($searchType == "Liner") {
                 // $round[$i] = "Round :" . $l . '===>' . $x . '!=' . $arr[$i] ."<br>" ;
             }
         }
-        return -1;
+        return "ข้อมูลที่ค้นหาไม่อยู่ใน List";
     }
     echo 'List : [' . $searchList . '] ' . "<br>";
     echo "Search : " . $searchNum . "<br>";
