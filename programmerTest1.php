@@ -78,7 +78,6 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <label for="test">ผลลัพธ์</label>
-                    <!-- <textarea class="form-control" id="textResult" rows="10"></textarea> -->
                     <div id="test" class="square">
                 </div>
                 <div class="col-md-1"></div>
@@ -93,9 +92,6 @@
         var searchList = jQuery('#searchList').val();
         var searchNum = jQuery('#searchNum').val();
         var searchType = jQuery('#searchType').val();
-        //   alert(searchList);
-        //    alert(searchNum);
-        //    alert(searchType);
         jQuery.ajax({
             type: 'POST',
             url: 'programmerTest1Admin.php',
@@ -108,8 +104,6 @@
                 jQuery('#test').html('<div class="text-center"><i class="fas fa-spinner fa-pulse fa-6x"></i></div>');
             },
             success: function(returnData) {
-                // window.location = 'testShippopAdmin.php';
-                //    alert(returnData);
                 jQuery('#test').html(returnData);
             }
         });
